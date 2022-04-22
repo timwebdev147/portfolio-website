@@ -608,7 +608,7 @@ export default {
     @keyframes circleButtonReverse {
         from {
             top: 40px;
-            left: 100px;
+            left: 20px;
         }
         to {
             top: 40px;
