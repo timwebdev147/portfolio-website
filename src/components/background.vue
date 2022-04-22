@@ -531,15 +531,15 @@ export default {
         top: 0;
         left: 0;
         right: 0;
-        width: 100%;
-        height: 100%;
+        width: inherit;
+        height: inherit;
         background-color: rgba(0,0,0,0.3)
     }
     .background-container > div > div{
         width: calc(100% );
         height: 100%;
         /* width: 600px; */
-        /* border: 1px solid black; */
+        border: 1px solid black;
         position: relative;
         display: flex;
         flex-direction: column;
