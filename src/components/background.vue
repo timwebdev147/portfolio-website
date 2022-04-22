@@ -525,6 +525,12 @@ export default {
         height: 100%;
         /* border: 1px solid black; */
     }
+    .background-container > div:nth-child(1) > div::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3)
+    }
     .background-container > div > div{
         width: calc(100% );
         height: 100%;
@@ -545,10 +551,11 @@ export default {
         padding: 20px;
         border-radius: 250px;
         background-color: rgb(65, 65, 184);
-        color: black;
+        color: white;
     }
     .background-container > div > div > h1{
-        color: black;
+        color: white;
+        text-shadow: 2px 2px 4px grey;
         font-size: 35px;
         /* position: absolute; */
         transform: rotate(270deg);
@@ -557,7 +564,8 @@ export default {
         left: -80px;
     }
     .background-container > div > div > p{
-        color: black;
+        color: white;
+        text-shadow: 2px 2px 4px grey;
         position: absolute;
         top: 600px;
         left: 7%;
@@ -571,7 +579,7 @@ export default {
         position: absolute;
         top: 700px;
         left: 100px;
-        color: black;
+        color: white;
         background-color: rgb(184, 184, 236);
         padding: 15px 40px;
         border-radius: 10px;
