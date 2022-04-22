@@ -158,12 +158,25 @@ export default {
         background-attachment: fixed;
         background-position: left;
         overflow: hidden;
+        
         width: 100%;
         /* flex: ; */
         height: 100%;
         /* display: flex; */
         
         /* border: 1px solid black; */
+    }
+    .background-container > div:nth-child(1) > div{
+        content: "";
+        /* position: absolute; */
+        /* top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; */
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        
     }
     .background-container > div:nth-child(2){
         background-image: url('/src/assets/background-2.jpg');
@@ -193,7 +206,7 @@ export default {
         width: calc(100% - 200px);
         height: 100%;
         /* width: 600px; */
-        /* border: 1px solid black; */
+        border: 1px solid black;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -209,26 +222,31 @@ export default {
         padding: 35px;
         border-radius: 250px;
         background-color: rgb(65, 65, 184);
-        color: black;
+        color: white;
     }
     .background-container > div > div > h1{
-        color: black;
-        font-size: 100px;
-        width: 100%;
+        color: white;
+        text-shadow: 2px 2px 4px grey;
+        font-size: 60px;
+        /* border: 1px solid black; */
+        width: 700px;
+        text-align: left;
         position: absolute;
         word-wrap: break-word;
         transform: rotate(270deg);
         top: 400px;
-        /* right: 100px; */
+        left: 20px;
     }
     .background-container > div > div > p{
-        color: black;
+        color: white;
         position: absolute;
-        top: 600px;
+        text-shadow: 2px 2px 4px grey;
+        /* border: 1px solid black; */
+        top: 700px;
         left: 100px;
         text-align: left;
         width: 500px;
-        font-size: 20px;
+        font-size: 25px;
     }
     .background-container > div > div > a{
         border: 1px solid rgb(184, 184, 236);
@@ -236,7 +254,7 @@ export default {
         position: absolute;
         top: 700px;
         left: 100px;
-        color: black;
+        color: white;
         background-color: rgb(184, 184, 236);
         padding: 20px 50px;
         border-radius: 10px;
@@ -298,13 +316,13 @@ export default {
             left: 100px;
         }
         to {
-            top: 350px;
+            top: 400px;
             left: 100px;
         }
     }
     @keyframes regularButtonReverse {
         from {
-            top: 350px;
+            top: 400px;
             left: 100px;
         }
         to {
@@ -330,25 +348,30 @@ export default {
         from {
             transform: rotate(270deg);
             top: 400px;
-            left: 100px;
+            left: 20px;
             font-size: 60px;
+            /* width: 700px; */
         }
         to {
             transform: rotate(360deg);
-            top: 90px;
+            top: 100px;
             left: 100px;
+            font-size: 70px;
+            /* min-width:500px ; */
         }
     }
     @keyframes headerReverse {
         from {
             transform: rotate(360deg);
-            top: 90px;
+            top: 100px;
             left: 100px;
+            font-size: 70px;
         }
         to {
             transform: rotate(270deg);
             top: 400px;
-            left: 100px;
+            left: 20px;
+            font-size: 60px;
         }
     }
     .animate-paragraph{
@@ -367,21 +390,21 @@ export default {
     }
     @keyframes paragraph {
         from {
-            top: 600px;
+            top: 700px;
             left: 100px;
         }
         to {
-            top: 250px;
+            top: 300px;
             left: 100px;
         }
     }
     @keyframes paragraphReverse {
         from {
-            top: 2500px;
+            top: 300px;
             left: 100px;
         }
         to {
-            top: 600px;
+            top: 700px;
             left: 100px;
         }
     }
@@ -525,11 +548,17 @@ export default {
         height: 100%;
         /* border: 1px solid black; */
     }
+    .background-container > div:nth-child(1) > div{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
     .background-container > div > div{
         width: calc(100% );
         height: 100%;
         /* width: 600px; */
-        border: 1px solid black;
+        /* border: 1px solid black; */
         position: relative;
         display: flex;
         flex-direction: column;
@@ -545,19 +574,22 @@ export default {
         padding: 20px;
         border-radius: 250px;
         background-color: rgb(65, 65, 184);
-        color: black;
+        color: white;
     }
     .background-container > div > div > h1{
-        color: black;
+        color: white;
+        text-shadow: 2px 2px 4px grey;
         font-size: 35px;
         /* position: absolute; */
         transform: rotate(270deg);
         width: 100%;
+        text-align: center;
         top: 300px;
         left: -80px;
     }
     .background-container > div > div > p{
-        color: black;
+        color: white;
+        text-shadow: 2px 2px 4px grey;
         position: absolute;
         top: 600px;
         left: 7%;
@@ -571,7 +603,7 @@ export default {
         position: absolute;
         top: 700px;
         left: 100px;
-        color: black;
+        color: white;
         background-color: rgb(184, 184, 236);
         padding: 15px 40px;
         border-radius: 10px;
@@ -608,7 +640,7 @@ export default {
     @keyframes circleButtonReverse {
         from {
             top: 40px;
-            left: 100px;
+            left: 20px;
         }
         to {
             top: 40px;
