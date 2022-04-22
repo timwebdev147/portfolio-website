@@ -525,8 +525,12 @@ export default {
         height: 100%;
         /* border: 1px solid black; */
     }
-    .background-container > div:nth-child(1)::after{
+    .background-container > div:nth-child(1) > div::after{
         content: "";
+        left: 0;
+        top: 0;
+        left: 0;
+        right: 0;
         width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.3)
