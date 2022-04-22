@@ -525,7 +525,7 @@ export default {
         height: 100%;
         /* border: 1px solid black; */
     }
-    .background-container > div:nth-child(1) > div::after{
+    .background-container > div:nth-child(1)::after{
         content: "";
         width: 100%;
         height: 100%;
