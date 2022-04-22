@@ -190,7 +190,7 @@ export default {
         /* border: 1px solid black; */
     }
     .background-container > div > div{
-        width: calc(800px - 200px);
+        width: calc(100% - 200px);
         height: 100%;
         /* width: 600px; */
         /* border: 1px solid black; */
@@ -213,8 +213,10 @@ export default {
     }
     .background-container > div > div > h1{
         color: black;
-        font-size: 70px;
+        font-size: 100px;
+        width: 100%;
         position: absolute;
+        word-wrap: break-word;
         transform: rotate(270deg);
         top: 400px;
         /* right: 100px; */
@@ -329,6 +331,7 @@ export default {
             transform: rotate(270deg);
             top: 400px;
             left: 100px;
+            font-size: 60px;
         }
         to {
             transform: rotate(360deg);
@@ -546,7 +549,7 @@ export default {
     }
     .background-container > div > div > h1{
         color: black;
-        font-size: 40px;
+        font-size: 35px;
         /* position: absolute; */
         transform: rotate(270deg);
         width: 100%;
@@ -669,13 +672,13 @@ export default {
             transform: rotate(270deg);
             top: 300px;
             left: -80px;
-            font-size: 40px;
+            font-size: 35px;
         }
         to {
             transform: rotate(360deg);
             top: 90px;
             left: -100px;
-            /* font-size: 45px; */
+            font-size: 35px;
         }
     }
     @keyframes headerReverse {
@@ -683,13 +686,13 @@ export default {
             transform: rotate(360deg);
             top: 90px;
             left: -100px;
-            /* font-size: 45px; */
+            font-size: 35px;
         }
         to {
             transform: rotate(270deg);
             top: 300px;
             left: -80px;
-            font-size: 40px;
+            font-size: 35px;
         }
     }
     .animate-paragraph{
