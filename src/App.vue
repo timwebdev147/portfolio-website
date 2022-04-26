@@ -1,16 +1,19 @@
 <template>
+  <navBar/>
   <backGround/>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import backGround from './components/background.vue'
+import navBar from './components/navBar.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    backGround
+    backGround,
+    navBar
   }
 }
 </script>

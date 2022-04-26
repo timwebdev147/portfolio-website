@@ -25,6 +25,14 @@
             </div>
         </div>
     </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
 </template>
 
 <script>
@@ -151,12 +159,13 @@ export default {
         /* border: 1px solid black; */
         display: flex;
         overflow: hidden;
+        /* margin-top: 200px; */
     }
     .background-container > div:nth-child(1){
         background-image: url('/src/assets/background-1.jpg');
         background-size: 100% 100%;
         background-attachment: fixed;
-        background-position: left;
+        background-position: center;
         overflow: hidden;
         
         width: 100%;
@@ -182,7 +191,7 @@ export default {
         background-image: url('/src/assets/background-2.jpg');
        background-size: 100% 100%;
         background-attachment: fixed;
-        background-position: left;
+        background-position: center;
         width: 100%;
          overflow: hidden;
         /* flex: 1; */
@@ -510,23 +519,24 @@ export default {
     }
     .background-container > div:nth-child(1){
         background-image: url('/src/assets/background-1.jpg');
-        background-size: contain;
+        background-size: inherit inherit;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: top;
+        background-position: center center;
         overflow: hidden;
         width: 100%;
         /* flex: ; */
-        height: 100%;
+        height: inherit;
         /* display: flex; */
+        transition-duration: 1s;
         
         /* border: 1px solid black; */
     }
     .background-container > div:nth-child(2){
         background-image: url('/src/assets/background-2.jpg');
-        background-size: contain;
+        background-size: inherit inherit;
         background-attachment: fixed;
-        background-position: top;
+        background-position: center center;
         background-repeat: no-repeat;
         width: 100%;
          overflow: hidden;
@@ -538,15 +548,16 @@ export default {
     }
     .background-container > div:nth-child(3){
         background-image: url('/src/assets/background-3.jpg');
-        background-size: contain;
+        background-size: inherit inherit;
         background-attachment: fixed;
-        background-position: top;
+        background-position: center center;
         background-repeat: no-repeat;
           overflow: hidden;
         /* flex: 1; */
         width: 100%;
         height: 100%;
         /* border: 1px solid black; */
+        transition-duration: 2s;
     }
     .background-container > div:nth-child(1) > div{
         content: '';
