@@ -17,10 +17,10 @@
         <div>
             <button @click="hideSideBar()"><i class="fa fa-times"></i></button>
             <ul>
-                <li> {{menu1}} </li>
-                <li> {{menu2}} </li>
-                <li> {{menu3}} </li>
-                <li> {{menu4}} </li>
+                <li><a href=""> {{menu1}} </a></li>
+                <li> <a href=""> {{menu2}} </a> </li>
+                <li> <a href=""> {{menu3}} </a> </li>
+                <li> <a href=""> {{menu4}} </a> </li>
 
             </ul>
         </div>
@@ -229,10 +229,14 @@ export default {
         list-style-type: none;
         height: 15vh;
     }
-    #sidebar > div:nth-child(2) > ul > li{
+    #sidebar > div:nth-child(2) > ul > li > a{
         /* margin: 0; */
         color: black;
+        text-decoration: none;
         
+    }
+    #sidebar > div:nth-child(2) > ul > li > a:hover{
+        color: #35495e;
     }
     button > .fa-xmark{
         font-size: 30px;

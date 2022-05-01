@@ -1,10 +1,12 @@
 <template>
+    <h1>This is an animated background click the different images to view the background</h1>
+
     <div class="background-container">
         <div id="bg1" >
             <div @click.self="expand1()">
                 <button @click="shrink1()" :class="{'animate-circle-button': !active1, 'animate-circle-button-reverse': notactive1}"><i class="fa fa-angles-left"></i></button>
                 <h1 :class="{'animate-header': !active1, 'animate-header-reverse': notactive1}">Mountain Resort</h1>
-                <p :class="{'animate-paragraph': !active1, 'animate-paragraph-reverse': notactive1}">Thus is a place you would love to be to enjoy whatever, whatever and whatever.</p>
+                <p :class="{'animate-paragraph': !active1, 'animate-paragraph-reverse': notactive1}">This is a place you would love to be to enjoy whatever, whatever and whatever.</p>
                 <a :class="{'animate-regular-button': !active1, 'animate-regular-button-reverse': notactive1}" href="">book now</a>
             </div>
         </div>
@@ -12,7 +14,7 @@
             <div @click.self="expand2()">
                 <button @click="shrink2()" :class="{'animate-circle-button': !active2, 'animate-circle-button-reverse': notactive2}"><i class="fa fa-angles-left"></i></button>
                 <h1 :class="{'animate-header': !active2, 'animate-header-reverse': notactive2}">Fuji Mountain</h1>
-                <p :class="{'animate-paragraph': !active2, 'animate-paragraph-reverse': notactive2}">Thus is a place you would love to be to enjoy whatever, whatever and whatever.</p>
+                <p :class="{'animate-paragraph': !active2, 'animate-paragraph-reverse': notactive2}">This is a place you would love to be to enjoy whatever, whatever and whatever.</p>
                 <a :class="{'animate-regular-button': !active2, 'animate-regular-button-reverse': notactive2}" href="">book now</a>
             </div>
         </div>
@@ -26,13 +28,7 @@
         </div>
     </div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
     
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus voluptate similique perferendis fuga eaque aliquam quae sequi a libero optio fugiat harum iste fugit provident, minima illum deleniti ducimus dolorum.</p>
 </template>
 
 <script>
@@ -508,6 +504,7 @@ export default {
         }
     }
 </style>
+
 <style scoped>
  @media (min-width: 350px) and (max-width: 750px) {
      .background-container{
