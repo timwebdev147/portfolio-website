@@ -1,14 +1,14 @@
 <template>
     <nav v-bind:class="{sticky: scrollPosition > 10}">
-        <img src="../assets/img/logo.png" alt="">
+        <img  alt="WEBBER-MAN">
         <ul>
             <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 850 && scrollPosition < 1800}" href="#services"><li> {{menu1}} </li></a>
             <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 1800 && scrollPosition < 2550}" href="#team"><li> {{menu2}} </li></a>
             <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 2550 && scrollPosition < 3500}" href="#portfolio"><li> {{menu3}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 3500 && scrollPosition < 4300}" href="#pricing"><li> {{menu4}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 4300 && scrollPosition < 4550}" href="#clients"><li> {{menu5}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 4550 && scrollPosition < 5100}" href="#testimonials"><li> {{menu6}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 5100 && scrollPosition < 5800}" href="#contact-us"><li> {{menu7}} </li></a>
+            <!-- <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 3500 && scrollPosition < 4300}" href="#pricing"><li> {{menu4}} </li></a> -->
+            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 3500 && scrollPosition < 3700}" href="#clients"><li> {{menu5}} </li></a>
+            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 3700 && scrollPosition < 4250}" href="#testimonials"><li> {{menu6}} </li></a>
+            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 4250 && scrollPosition < 4950}" href="#contact-us"><li> {{menu7}} </li></a>
         </ul>
         <button @click="showSideBar()">
             <i class="fa fa-bars"></i>
@@ -128,6 +128,13 @@ export default {
         height: 70%;
         padding: 0 30px;
         /* box-shadow: 2px 2px 4px black; */
+        font-family: sans-serif;
+        display: flex;
+        align-items: center;
+        position: relative;
+        color: #058bce;
+        font-size: 20px;
+        font-weight: bolder;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 200px;
     }

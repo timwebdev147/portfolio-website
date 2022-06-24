@@ -1,11 +1,11 @@
 <template>
     <div class="footer">
-        <img src="../assets/img/logo.png" alt="">
+        <img alt="WEBBERMAN">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div>
-            <i class="fab fa-twitter"></i>
+            <!-- <i class="fab fa-whatsapp"></i> -->
             <i class="fab fa-facebook"></i>
-            <i class="fa fa-behance"></i>
+            <!-- <i class="fab fa-behance"></i> -->
             <i></i>
             <i></i>
         </div>
@@ -71,7 +71,11 @@ export default {
     .footer > img{
         width: 150px;
         height: 50px;
+        font-family: sans-serif;
         position: relative;
+        color: #058bce;
+        font-size: 20px;
+        font-weight: bolder;
         top: 5px;
         /* margin: 50px; */
     }
