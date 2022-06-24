@@ -38,6 +38,11 @@ export default {
         width: 200px;
         height: 50px;
         position: relative;
+         font-family: sans-serif;
+        /* position: relative; */
+        color: #058bce;
+        font-size: 20px;
+        font-weight: bolder;
         top: 25px;
         /* margin: 50px; */
     }
