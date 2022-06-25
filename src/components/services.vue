@@ -73,10 +73,10 @@ export default {
             this.scrollPosition = window.scrollY;
             var topicHeader = document.querySelector('#serviceHeader')
             var topicParagraph = document.querySelector('#serviceParagraph')
-            if (this.scrollPosition > 500) {
+            if (this.scrollPosition > 400) {
               topicHeader.classList.add('fadeScroll')
             }
-            if (this.scrollPosition > 600) {
+            if (this.scrollPosition > 500) {
               topicParagraph.classList.add('fadeScroll')
             }
             console.log(this.scrollPosition)
