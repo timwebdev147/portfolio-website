@@ -9,7 +9,7 @@
             <div  id="card" class="card" :class="card.class"  :style="card.styleObject" v-for="card in cards" :key="card.id">
                 <div>
                 <h1 :class="{'slide-left': disabled, 'header1': abled, 'header1-1': active}" >{{card.header1}}</h1>
-                <h2 :class="{'slide-right': disabled, 'header2': abled, 'header2-1': active}">{{card.header2}}</h2>
+                <h2 :class="{'slide-right': disabled, 'header2': abled, 'header1-1': active}">{{card.header2}}</h2>
                 <p :class="{'slide-right': disabled, 'cardPara': abled, 'header1-1': active, 'header1-1Mobile': activeMoblie}">{{card.paragraph}}</p>
                 <a :class="{'slide-bottom': disabled, 'cardButton': abled, 'header1-1': active}" href=""><b>SERVICES</b></a>
                 </div>
@@ -153,7 +153,7 @@ export default {
             const last = this.indicators.pop()
             this.indicators = [last].concat(this.indicators);
             setTimeout(() => this.abled = false, 1000)
-            setTimeout(() => this.active = true, 275)
+            setTimeout(() => this.active = true, 100)
             setTimeout(() => this.activeMoblie = true, 190)
             setTimeout(() => this.disabled = true, 1000)
             setTimeout(() => this.disabled = false, 2000)
@@ -791,7 +791,14 @@ export default {
     }
     .header1-1{
         /* margin-right: 120%; */
-        display: none;
+        display: block;
+        animation-name: hey;
+        animation-duration: 0.25s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes hey {
+        from{opacity: 1;}
+        to{opacity: 0;}
     }
     .header1{
         color: white;
