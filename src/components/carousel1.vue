@@ -308,7 +308,7 @@ export default {
 
 <style scoped>
     .carousel-view{
-        height: 140vh;
+        height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -476,7 +476,7 @@ export default {
         position: absolute;
         word-wrap: break-word;
         /* transform: rotate(270deg); */
-        top: 280px;
+        top: 30%;
         /* right: -300px; */
     }
     .header2-1{
@@ -511,12 +511,19 @@ export default {
         position: absolute;
         word-wrap: break-word;
         /* transform: rotate(270deg); */
-        top: 220px;
+        top: 20%;
         /* left: -200px; */
     }
     .header1-1{
         /* margin-right: 120%; */
-        display: none;
+        display: block;
+        animation-name: hey;
+        animation-duration: 0.25s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes hey {
+        from{opacity: 1;}
+        to{opacity: 0;}
     }
     .header1{
         color: white;
@@ -617,7 +624,10 @@ export default {
         margin: 20px 0;
         /* margin-right: 2000px; */
         line-height: 2;
-        top: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 45%;
         /* right: -700px; */
         text-align: center;
         /* width: 500px; */
@@ -649,7 +659,7 @@ export default {
         text-decoration: none;
         /* margin-bottom: 50px; */
         position: absolute;
-        bottom: 350px;
+        bottom: 25%;
         /* left: 100px; */
         color: white;
         /* background-color: rgb(184, 184, 236); */
@@ -675,7 +685,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .carousel-view{
-        height: 100vh;
+        height: 80vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -789,17 +799,7 @@ export default {
         top: 17%;
         /* left: -200px; */
     }
-    .header1-1{
-        /* margin-right: 120%; */
-        display: block;
-        animation-name: hey;
-        animation-duration: 0.25s;
-        animation-fill-mode: forwards;
-    }
-    @keyframes hey {
-        from{opacity: 1;}
-        to{opacity: 0;}
-    }
+    
     .header1{
         color: white;
         /* text-shadow: 2px 2px 4px grey; */
