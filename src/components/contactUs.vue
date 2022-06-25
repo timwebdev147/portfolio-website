@@ -209,7 +209,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
 .contact-us{
-        height: 90vh;
+        height: 806px;
         width: calc( 100% - 10%);
         /* border: 1px solid black; */
         background-image: url('../assets/img/backgrounds/contact-img.png');
@@ -243,7 +243,7 @@ export default {
     }
     .form{
         width: 100%;
-        height: 60vh;
+        height: 537.6px;
         /* border: 1px solid black; */
         display: flex;
         position: relative;
@@ -287,7 +287,7 @@ export default {
     }
      .form > .topic{
         width: 100%;
-        height: 20vh;
+        height: 179px;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -345,7 +345,7 @@ export default {
     }
     .contact-address{
         width: 100%;
-        height: 20vh;
+        height: 179px;
         /* border: 1px solid black; */
         display: flex;
         position: relative;

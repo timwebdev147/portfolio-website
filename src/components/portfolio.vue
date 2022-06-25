@@ -295,7 +295,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .portfolio {
-        height:  100vh ;
+        height:  896px ;
         background-color: #ececec;
         width: 100%;
         display: flex;
@@ -307,7 +307,7 @@ export default {
     .portfolio > .topic{
        
         width: 100%;
-        height: 20vh;
+        height: 179px;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -337,7 +337,7 @@ export default {
     
     .buttons{
         width: 100%;
-        height: 10vh;
+        height: 89px;
         /* border: 1px solid black; */
         display: flex;
         justify-content: space-around;
@@ -354,7 +354,7 @@ export default {
         text-transform: uppercase;
     }
     .portfolioGrid{
-        height: 60vh;
+        height: 537px;
         /* border: 1px solid black; */
         width: 100%;
         display: flex;

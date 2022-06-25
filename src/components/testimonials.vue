@@ -104,7 +104,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .testimonials{
-        height: 75vh;
+        height: 672px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -114,7 +114,7 @@ export default {
     }
     .testimonials > .topic{
         width: 100%;
-        height: 20vh;
+        height: 179px;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;

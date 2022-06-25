@@ -295,7 +295,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .carousel-view{
-        height: 65vh;
+        height: 582px;
         /* border: 1px solid black; */
         width: 100%;
         display: flex;

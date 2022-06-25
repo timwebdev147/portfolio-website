@@ -70,7 +70,7 @@ export default {
         align-items: flex-start;
         justify-content: space-around;
         width: calc( 100% - 10%);
-        height: 30vh;
+        height: 268.8px;
         padding: 0 5%;
         background-color: #0a0a0a;
     }

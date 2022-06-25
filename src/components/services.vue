@@ -238,7 +238,7 @@ export default {
 @media (min-width: 350px) and (max-width:750px) {
     .services{
         width: 100%;
-        height: calc(110vh + 80px);
+        height: calc(985px + 80px);
         /* border: 1px solid black; */
         background-image: url('/src/assets/img/backgrounds/services-bg.jpg');
         background-size: cover;
@@ -249,7 +249,7 @@ export default {
     }
     .services > .topic{
         width: 100%;
-        height: 20vh;
+        height: 179px;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -281,7 +281,7 @@ export default {
         /* border: 1px solid black; */
         justify-content: space-between;
         width: 90%;
-        height: 90vh;
+        height: 806px;
         margin-top: 20px;
     }
     .services > .grid > .column{

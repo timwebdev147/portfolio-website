@@ -669,7 +669,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .carousel-view{
-        height: 80vh;
+        height: 716px;
         width: 100%;
         display: flex;
         align-items: center;
