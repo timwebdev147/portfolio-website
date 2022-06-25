@@ -153,7 +153,7 @@ export default {
             const last = this.indicators.pop()
             this.indicators = [last].concat(this.indicators);
             setTimeout(() => this.abled = false, 1000)
-            setTimeout(() => this.active = true, 300)
+            setTimeout(() => this.active = true, 275)
             setTimeout(() => this.activeMoblie = true, 190)
             setTimeout(() => this.disabled = true, 1000)
             setTimeout(() => this.disabled = false, 2000)
@@ -255,7 +255,7 @@ export default {
         justify-content: space-around;
         align-items: center;
         position: absolute;
-        bottom: 50px;
+        bottom: 7%;
 
     }
     .indicator-container > div{
@@ -547,6 +547,7 @@ export default {
     @keyframes slideRight {
         0% {
             margin-left: 100%;
+            opacity: 0;
         }
         25% {
             margin-left: -25px;
@@ -556,6 +557,7 @@ export default {
         }
         70% {
             margin-left: 0;
+            opacity: 1;
             /* right: initial; */
         }
     }
@@ -568,6 +570,7 @@ export default {
     @keyframes slideLeft {
         0% {
             margin-right: 100%;
+            opacity: 0;
         }
         25% {
             margin-right: -25px;
@@ -577,6 +580,7 @@ export default {
         }
         70% {
             margin-right: 0;
+            opacity: 1;
             /* left: initial; */
         }
     }
@@ -588,6 +592,7 @@ export default {
     @keyframes slideBottom {
         0% {
             margin-bottom: -500px;
+            opacity: 0;
         }
         25% {
             margin-bottom: 15px;
@@ -597,6 +602,7 @@ export default {
         }
         70% {
             margin-bottom: 0;
+            opacity: 1;
             /* bottom: initial; */
         }
     }
@@ -669,7 +675,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .carousel-view{
-        height: 716px;
+        height: 80vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -735,7 +741,7 @@ export default {
     .card > div > h2{
         color: white;
         /* text-shadow: 2px 2px 4px grey; */
-        font-size: 50px;
+        font-size: 250%;
         /* border: 1px solid black; */
         text-transform: uppercase;
         /* width: 700px; */
@@ -745,7 +751,7 @@ export default {
         position: absolute;
         word-wrap: break-word;
         /* transform: rotate(270deg); */
-        top: 180px;
+        top: 25%;
         /* right: -300px; */
     }
     .header2-1{
@@ -770,7 +776,7 @@ export default {
     .card > div > h1{
         color: white;
         /* text-shadow: 2px 2px 4px grey; */
-        font-size: 15px;
+        font-size: 75%;
         /* margin-right: 100%; */
 
         /* border: 1px solid black; */
@@ -780,7 +786,7 @@ export default {
         position: absolute;
         word-wrap: break-word;
         /* transform: rotate(270deg); */
-        top: 120px;
+        top: 17%;
         /* left: -200px; */
     }
     .header1-1{
@@ -810,11 +816,13 @@ export default {
         
         /* display: none; */
         /* border: 1px solid black; */
-        width: 50%;
+        height: 30%;
+        word-wrap: break-word;
+        width: 60%;
         margin: 20px 0;
         /* margin-right: 2000px; */
-        line-height: 2;
-        top: 280px;
+        line-height: 4ex;
+        top: 39%;
         /* right: -700px; */
         text-align: center;
         /* width: 500px; */
@@ -827,7 +835,7 @@ export default {
         text-decoration: none;
         /* margin-bottom: 50px; */
         position: relative;
-        bottom: -200px;
+        bottom: -30%;
         /* left: 100px; */
         color: white;
         /* background-color: rgb(184, 184, 236); */
