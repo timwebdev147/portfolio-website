@@ -690,7 +690,7 @@ export default {
         position: absolute;
     }
     .carousel-view > button:nth-of-type(1){
-        left: -100px;
+        left: 0px;
         top: 40%;
         border: none;
         position: absolute;
@@ -702,7 +702,7 @@ export default {
         color: white;
     }
     .carousel-view > button:nth-of-type(2){
-        right: -100px;
+        right: 0px;
         top: 40%;
         border: none;
         position: absolute;

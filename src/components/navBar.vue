@@ -24,11 +24,10 @@
             <ul>
                 <a @click="hideSideBar()" :class="{blueLine: scrollPosition > 850 && scrollPosition < 1800, blackList: scrollPosition > 1800 && scrollPosition < 2500}" href="#services"><li> {{menu1}} </li></a>
                 <a @click="hideSideBar()" :style="{color: scrollPosition > 1800 && scrollPosition < 2500}" :class="{'blueLine  blackList': scrollPosition > 1800 && scrollPosition < 2500}" href="#team"><li> {{menu2}} </li></a>
-                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href=""><li> {{menu3}} </li></a>
-                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href=""><li> {{menu4}} </li></a>
-                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href=""><li> {{menu5}} </li></a>
-                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href=""><li> {{menu6}} </li></a>
-                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href=""><li> {{menu7}} </li></a>
+                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href="#portfolio"><li> {{menu3}} </li></a>
+                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href="#clients"><li> {{menu5}} </li></a>
+                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href="#testimonials"><li> {{menu6}} </li></a>
+                <a @click="hideSideBar()" :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500}" href="#contact-us"><li> {{menu7}} </li></a>
 
             </ul>
         </div>
@@ -124,18 +123,20 @@ export default {
         
     }
     nav > img{
-        width: 150px;
+        width: 200px;
         height: 70%;
         padding: 0 30px;
-        /* box-shadow: 2px 2px 4px black; */
+        text-shadow: 1px 2px 2px rgb(88, 86, 86);
         font-family: sans-serif;
         display: flex;
+        left: -15px;
         align-items: center;
+        justify-content: center;
         position: relative;
         color: #058bce;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bolder;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0);
         border-radius: 200px;
     }
     nav > ul{
@@ -203,11 +204,13 @@ export default {
         padding: 20px 30px;
         background-color: transparent;
         border: none;
+        color: #058bce;
         display: block;
     }
      nav > img{
-        width: 70px;
+         width: 200px;
         height: 70%;
+
         padding: 0 30px;
         
     }
@@ -215,8 +218,8 @@ export default {
         position: fixed;
         z-index: 5;
         height: 70px;
-        /* background-color: grey; */
-        /* box-shadow: 0px 0px 4px grey; */
+        /* background-color: rgba(0, 0, 0, 0.9); */
+        /* box-shadow: 1px 0px 4px 1px white; */
         margin: 0;
         top: 0;
         left: 0;
@@ -224,7 +227,9 @@ export default {
         transition-duration: 0.1s;
     }
     .sticky > img{
-        width: 70px;
+        /* width: 150px; */
+        /* text-shadow: none; */
+        /* box-shadow: 1px 0px 4px 1px white; */
         height: 70%;
         padding: 0 30px;
     }

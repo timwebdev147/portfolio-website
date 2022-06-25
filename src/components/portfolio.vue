@@ -354,14 +354,15 @@ export default {
         text-transform: uppercase;
     }
     .portfolioGrid{
-        height: 50vh;
+        height: 60vh;
+        /* border: 1px solid black; */
         width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
     .portfolioProject{
-        width: calc(25% - 5px);
-        height: 50%;
+        width: calc(50% - 5px);
+        height: 25%;
         margin-right: 5px;
         margin-bottom: 5px;
         background-size: 100% 100%;

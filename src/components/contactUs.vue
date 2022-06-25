@@ -17,14 +17,14 @@
         <div class="contact-address">
             <div class="addresses">
                 <div class="office-address">
-                    <p>xBe - Creative Agency</p>
-                    <p>284 Swanston St,</p>
-                    <p>Melbourne VIC 3000, Australia</p>
+                    <p>Webber-Man - Creative Agency</p>
+                    <p>Office No 2, Last floor Hussey plaza, Waec bustop</p>
+                    <p>Yaba Lagos, Nigeria</p>
                 </div>
                 <div class="email-address">
                     <p>Email Us</p>
-                    <a href=""><p>your.email@example.com</p></a>
-                    <a href=""><p>support@example.com</p></a>
+                    <a href=""><p>Akinsanmidev@gmail.com</p></a>
+                    <a href=""><p>Tobifrontdev@gmail.com</p></a>
                 </div>
             </div>
         </div>

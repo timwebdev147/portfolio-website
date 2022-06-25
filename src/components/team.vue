@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
     .team{
-        height: calc (110vh - 60px);
+        height: calc(110vh);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -54,6 +54,7 @@ export default {
         height: 30vh;
         /* border: 1px solid black; */
         display: flex;
+        position: relative;
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
@@ -91,8 +92,8 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 1px solid black;
-        padding: 30px 0;
+        /* border: 1px solid black; */
+        padding-top: 30px;
         /* justify-content: flex-end; */
     }
     .team > .topic{
@@ -100,9 +101,10 @@ export default {
         height: 20vh;
         /* border: 1px solid black; */
         display: flex;
+        padding-top: 30px;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-end;
     }
     .team > .topic > h1{
         color: #058BCE;

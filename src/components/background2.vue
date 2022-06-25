@@ -23,7 +23,7 @@ export default {
 
 <style scoped>
 .background{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
 }
 </style>

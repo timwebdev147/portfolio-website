@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <img alt="WEBBERMAN">
+        <img alt="WEBBER-MAN">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div>
             <!-- <i class="fab fa-whatsapp"></i> -->
@@ -39,9 +39,10 @@ export default {
         height: 50px;
         position: relative;
          font-family: sans-serif;
+        text-shadow: 1px 2px 2px rgb(62, 61, 61);
         /* position: relative; */
         color: #058bce;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bolder;
         top: 25px;
         /* margin: 50px; */
@@ -81,7 +82,7 @@ export default {
         color: #058bce;
         font-size: 20px;
         font-weight: bolder;
-        top: 5px;
+        top: 20px;
         /* margin: 50px; */
     }
     .footer > p {
