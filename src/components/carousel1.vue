@@ -334,7 +334,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 100%;
+        padding-left: 99vw;
         overflow: hidden;
         width: 100vw;
         
@@ -675,7 +675,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .carousel-view{
-        height: 80vh;
+        height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;
