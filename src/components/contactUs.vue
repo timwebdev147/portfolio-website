@@ -6,11 +6,11 @@
                 <h1 id="contactHeader">{{header}}</h1>
                 <p id="contactParagraph">Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-            <form action="">
-                <input type="text" placeholder="Your Name *">
-                <input type="email" placeholder="Your Email *">
-                <input type="text" placeholder="Your Number *">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message *"></textarea>
+            <form action="http://localhost/myphp/file.php/" method="POST">
+                <input type="text" name="fname" placeholder="Your Name *">
+                <input type="email" name="email" placeholder="Your Email *">
+                <input type="text" name="number" placeholder="Your Number *">
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Message *"></textarea>
                 <input class="submit" type="submit" value="send message">
             </form>
         </div>

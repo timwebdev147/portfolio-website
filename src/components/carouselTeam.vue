@@ -46,8 +46,8 @@ export default {
             transit: false,
             cards: [
                 {
-                    header: 'Nicole Johnson',
-                    header2: "Lead designer",
+                    header: 'Akinsanmi Timothy',
+                    header2: "Front End Developer",
                     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
                     id:1,
                     styleObject: {
@@ -60,7 +60,7 @@ export default {
             //         
                 },
                 {
-                    header: 'David Farland',
+                    header: 'Akinsanmi Timothy',
                     header2: "Full Stack Developer",
                     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
                     styleObject: {
@@ -72,8 +72,8 @@ export default {
                     
                 },
                 {
-                    header: 'Jenna Carrera',
-                    header2: "Lead designer",
+                    header: 'Akinsanmi Timothy',
+                    header2: "Back End Developer",
                     paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
                     id:3,
                     styleObject: {
@@ -234,15 +234,15 @@ export default {
         white-space: nowrap;
     } */
     div.card.card2 > .team-image{
-                background-image: url('/src/assets/img/team/david.png');
+                background-image: url('/src/assets/img/team/T1-retouch.png');
 
     }
     div.card.card3 > .team-image{
-                background-image: url('/src/assets/img/team/jenna.png');
+                background-image: url('/src/assets/img/team/T1-retouch.png');
 
     }
     div.card.card1 > .team-image{
-                background-image: url('/src/assets/img/team/nicole.png');
+                background-image: url('/src/assets/img/team/T1-retouch.png');
 
     }
     /* div.card:nth-child(4){
