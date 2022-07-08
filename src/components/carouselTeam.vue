@@ -1,5 +1,5 @@
 <template>
-<h1>This is a carousel slideshow you can also click to slide(built from scratch)</h1>
+<!-- <h1>This is a carousel slideshow you can also click to slide(built from scratch)</h1> -->
     <div   class="carousel-view">
         <!-- <div><img src="../assets/background-1.jpg" alt=""></div> -->
         <!-- <div><img src="../assets/background-2.jpg" alt=""></div> -->
@@ -14,9 +14,13 @@
                 <h2>{{card.header2}}</h2>
                 <p>{{card.paragraph}}</p>
                 <div>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-twitter"></i></a>
-                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <!-- <a href=""><i class="fab fa-facebook"></i></a> -->
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-hackerrank"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+
+
                 </div>
                 </div>
                         </div>
@@ -204,7 +208,7 @@ export default {
         width: calc(70%);
         /* padding: 0 10px; */
         display: flex;
-        /* border: 1px solid black; */
+        border: 1px solid black;
         align-items: center;
         /* overflow: hidden; */
         /* flex-flow: row nowrap; */
@@ -268,7 +272,7 @@ export default {
     }
     .card > .team-image{
         width: 30%;
-
+    filter: brightness(125%);
         /* border: 2px solid black; */
         background-repeat: no-repeat;
         background-size: cover;
@@ -407,7 +411,7 @@ export default {
         align-items: center;
         /* overflow: hidden; */
         /* flex-flow: row nowrap; */
-        bottom: 150px;
+        /* bottom: 150px; */
         position: relative;
         flex-direction: column;
         /* flex-wrap: wrap; */

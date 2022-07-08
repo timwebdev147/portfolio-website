@@ -187,7 +187,7 @@ export default {
         /* margin-bottom: 0; */
     }
     .buttons{
-        width: 60%;
+        width: 65%;
         height: 15vh;
         /* border: 1px solid black; */
         display: flex;

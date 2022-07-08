@@ -1,14 +1,15 @@
 <template>
+<div id="body">
     <nav v-bind:class="{sticky: scrollPosition > 10}">
         <img  alt="WEBBER-MAN">
         <ul>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 850 && scrollPosition < 1800}" href="#services"><li> {{menu1}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 1800 && scrollPosition < 2550}" href="#team"><li> {{menu2}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 2550 && scrollPosition < 3500}" href="#portfolio"><li> {{menu3}} </li></a>
+            <a :class="{blackList: scrollPosition > 10, blueLine: scrollPosition > 610 && scrollPosition < 1540}" href="#services"><li> {{menu1}} </li></a>
+            <a :class="{blackList: scrollPosition > 10, blueLine: scrollPosition > 1540 && scrollPosition < 2290}" href="#team"><li> {{menu2}} </li></a>
+            <a :class="{blackList: scrollPosition > 10, blueLine: scrollPosition > 2290 && scrollPosition < 3210}" href="#portfolio"><li> {{menu3}} </li></a>
             <!-- <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 3500 && scrollPosition < 4300}" href="#pricing"><li> {{menu4}} </li></a> -->
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 3500 && scrollPosition < 3700}" href="#clients"><li> {{menu5}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 3700 && scrollPosition < 4250}" href="#testimonials"><li> {{menu6}} </li></a>
-            <a :class="{blackList: scrollPosition > 1800 && scrollPosition < 2500 || scrollPosition > 3500 && scrollPosition < 4400, blueLine: scrollPosition > 4250 && scrollPosition < 4950}" href="#contact-us"><li> {{menu7}} </li></a>
+            <a :class="{blackList: scrollPosition > 10, blueLine: scrollPosition > 3210 && scrollPosition < 3420}" href="#clients"><li> {{menu5}} </li></a>
+            <a :class="{blackList: scrollPosition > 10, blueLine: scrollPosition > 3420 && scrollPosition < 3970}" href="#testimonials"><li> {{menu6}} </li></a>
+            <a :class="{blackList: scrollPosition > 10, blueLine: scrollPosition > 3970 && scrollPosition < 4950}" href="#contact-us"><li> {{menu7}} </li></a>
         </ul>
         <button @click="showSideBar()">
             <i class="fa fa-bars"></i>
@@ -31,6 +32,7 @@
 
             </ul>
         </div>
+    </div>
     </div>
 </template>
 
@@ -105,6 +107,15 @@ export default {
 </script>
 
 <style scoped>
+    #body{
+        width: 100%;
+    }
+
+    .sticky{
+        background-color: #ececec;
+        box-shadow: 0px 3px 10px rgb(59, 56, 56);
+    }
+
     nav{
         width: 100%;
         height: 70px;
