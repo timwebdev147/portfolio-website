@@ -208,7 +208,7 @@ export default {
         width: calc(70%);
         /* padding: 0 10px; */
         display: flex;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         align-items: center;
         /* overflow: hidden; */
         /* flex-flow: row nowrap; */
