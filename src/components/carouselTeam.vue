@@ -15,11 +15,10 @@
                 <p>{{card.paragraph}}</p>
                 <div>
                     <!-- <a href=""><i class="fab fa-facebook"></i></a> -->
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-hackerrank"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
-
+                    <a href="https://twitter.com/akinsanmidev?ref_src=twsrc%5Etfw"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/timwebdev147"><i class="fab fa-github"></i></a>
+                    <a href="https://www.hackerrank.com/tobifrontdev"><i class="fab fa-hackerrank"></i></a>
+                    <a href="https://www.linkedin.com/in/timothy-akinsanmi-607baa243/"><i class="fab fa-linkedin"></i></a>
 
                 </div>
                 </div>
@@ -443,11 +442,12 @@ export default {
         transition: transform 0.8s ease-in-out;
     }
     .card > .team-image{
-        width: 50%;
+        width: 60%;
         /* border: 2px solid black; */
+        object-fit: contain;
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        height: 100%;
+        /* height: 100%; */
     }
     .card > .team-about{
          width: 60%;

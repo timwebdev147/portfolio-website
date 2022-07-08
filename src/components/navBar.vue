@@ -113,7 +113,7 @@ export default {
 
     .sticky{
         background-color: #ececec;
-        box-shadow: 0px 3px 10px rgb(59, 56, 56);
+        box-shadow: 5px 0px 15px rgb(59, 56, 56);
     }
 
     nav{
@@ -211,7 +211,7 @@ export default {
         list-style-type: none;
         display: none;
     }
-    nav > button{
+    nav > button, #sidebar  button{
         padding: 20px 30px;
         background-color: transparent;
         border: none;

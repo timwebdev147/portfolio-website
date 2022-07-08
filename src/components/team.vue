@@ -99,7 +99,7 @@ export default {
     .team > .topic{
         width: 100%;
         height: 179px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         display: flex;
         padding-top: 30px;
         flex-direction: column;
