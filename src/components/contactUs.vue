@@ -208,6 +208,9 @@ export default {
         font-size: medium;
         /* border: 1px solid black; */
     }
+    form > span{
+        margin-bottom: 5px;
+    }
     form > div{
         min-height: 70px;
     
