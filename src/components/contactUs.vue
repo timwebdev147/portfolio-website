@@ -4,14 +4,25 @@
         <div class="form">
             <div class="topic">
                 <h1 id="contactHeader">{{header}}</h1>
-                <p id="contactParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+                <p id="contactParagraph">If you need my skills, Kindly fill in your details correctly and reach out to me Thanks.</p>
             </div>
-            <form action="http://localhost/myphp/file.php/" method="POST">
-                <input type="text" name="fname" placeholder="Your Name *">
-                <input type="email" name="email" placeholder="Your Email *">
-                <input type="text" name="number" placeholder="Your Number *">
-                <textarea name="comment" id="" cols="30" rows="10" placeholder="Your Message *"></textarea>
-                <input class="submit" type="submit" value="send message">
+            <form action="https://webberman-contact-form.herokuapp.com/" class="sample_form" method="POST">
+                <span v-if="fullname == '' || email == '' || !email == '' || number == '' || isNaN(number)"  >{{genErr}}</span>
+                <div>
+                <input class="form_name" type="text" name="fullname" placeholder="Your Name *" v-model="fullname">
+                <span v-if="fullname == ''" >{{fullNameErr}}</span>
+                </div>
+                <div>
+                <input class="form_data" type="email" name="email" placeholder="Your Email *" v-model="email">
+                <span v-if="email == '' || !email == ''" >{{emailErr}}</span>
+                </div>
+                <div>
+                <input class="form_data" type="text" name="number" placeholder="Your Number *" v-model="number">
+                <span v-if="number == '' || isNaN(number)" >{{numberErr}}</span>
+                </div>
+                <textarea class="form_data" name="comment" id=""  cols="30" rows="10" placeholder="Your Message *" v-model="note"></textarea>
+                <!-- <button > -->
+                <input class="submit" id="submit" @click="validate"  type="submit" value="send message" name="submit">
             </form>
         </div>
         <div class="contact-address">
@@ -37,8 +48,61 @@ export default {
     name: 'contactUs',
     data() {
         return {
-            header: 'get in touch'
+            header: 'get in touch',
+            
+            fullNameErr: '',
+            email: '',
+            number: '',
+            fullname: '',
+            
+            emailErr: '', 
+            
+            numberErr: '',
+            genErr: '',
+            note: '',
+            active: false
         }
+    },
+    watch: {
+        fullname(value){
+             if (value == '') {
+                this.fullNameErr = 'Name is required *'
+                // this.genErr = 'Missing or Incorrect field *'
+            } else{
+                this.fullNameErr = '';
+                // this.genErr = '';
+            }
+        },
+        email(value){
+            if (value == '') {
+                this.emailErr = 'Email is required field *'
+                // this.genErr = 'Missing or Incorrect field *'
+            } else if(!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value)) {
+                this.emailErr = 'invalid email address'
+                // this.genErr = 'Missing or Incorrect field *'
+            } else{
+                this.emailErr = '';
+                // this.genErr = '';
+            }
+        },
+        number(value){
+            if (value == '') {
+                this.numberErr = 'Number is required *'
+                // this.genErr = 'Missing or Incorrect field *'
+            } else if(!value == '' && isNaN(value)){
+                this.numberErr = 'input is not a valid number!'
+                // this.genErr = 'Missing or Incorrect field *'
+            } else{
+                this.numberErr = '';
+            }
+        },
+        '[foo.fullname, foo.email, foo.number]'(value){
+            // if(value == ''){
+            //     this.genErr = 'Missing or Incorrect field *'
+            // }
+            console.log(value)
+        }
+
     },
     methods: {
         updateScroll () {
@@ -60,11 +124,36 @@ export default {
         mouseLeave() {
             this.active = false;
             this.notActive = true;
+        },
+        validate(e){
+            if (this.fullname == '' || this.email == '' || !/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.email) || this.number == '' || isNaN(this.number)) {
+                // this.fullNameErr = 'Required field!'
+                // this.active = true;
+                e.preventDefault();
+            }
         }
     },
     mounted() {
-      window.addEventListener('scroll', this.updateScroll)
+      window.addEventListener('scroll', this.updateScroll);
+      this.$watch(
+      (vm) => [vm.fullname, vm.email, vm.number],
+      (val) => {
+        console.log(val);
+        if(val[0] == '' || val[1] == '' || !/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(val[1]) || val[2] == '' || isNaN(val[2])){
+            this.genErr = 'Required fields are incomplete or Incorrect *';
+        } else {
+            this.genErr = '';
+        }
+      },
+      {
+        immediate: false,
+        deep: true,
+      }
+    );
+    //   this.validate();
+    // this.generalErrorMessage();
     }
+
 }
 </script>
 
@@ -104,6 +193,32 @@ export default {
         position: relative;
         top: 60px;
         
+    }
+
+    .form > form{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid black; */
+        /* justify-content: space-between; */
+        /* width: 100%; */
+        min-height: 80vh;
+    }
+    form > div > span, form > span{
+        color: rgba(232, 54, 30, 0.996);
+        font-size: medium;
+        /* border: 1px solid black; */
+    }
+    form > div{
+        min-height: 70px;
+    
+        /* width: 100%; */
+    }
+    form > div > input{
+        /* width: 100%; */
+        height: 50px;
+        width: 98%;
+        /* margin-bottom: 10px; */
+        border: 1px solid transparent;
     }
     .form{
         width: 48%;
@@ -152,13 +267,15 @@ export default {
         display: flex;
         flex-direction: column;
         /* border: 1px solid black; */
-        justify-content: space-between;
+        /* justify-content: space-between; */
         width: 100%;
-        height: 80vh;
+        min-height: 80vh;
+        /* border: 1px solid black; */
     }
     form > input{
         /* width: 100%; */
         height: 50px;
+        margin-bottom: 10px;
         border: 1px solid transparent;
     }
     form > textarea{
@@ -241,6 +358,7 @@ export default {
         top: 30px;
         
     }
+    
     .form{
         width: 100%;
         height: 537.6px;
@@ -294,7 +412,11 @@ export default {
         /* padding-top: 30px; */
         align-items: center;
     }
-    
+    form > div > span, form > span{
+        color: rgba(232, 54, 30, 0.996);
+        font-size: smaller;
+        /* border: 1px solid black; */
+    }
     .form > .topic > h1{
         color: #058BCE;
         /* color: white; */
@@ -313,20 +435,29 @@ export default {
         width: calc(100% - 50px);
         /* margin-bottom: 0; */
     }
+    
+    
+    form > div{
+        min-height: 60px;
+    
+        /* width: 100%; */
+    }
+    
     .form > form{
         display: flex;
         flex-direction: column;
         /* border: 1px solid black; */
-        justify-content: space-between;
+        /* justify-content: space-between; */
         width: 100%;
-        height: 80%;
+        min-height: 80%;
     }
     form > .submit{
         top: 30px;
     }
-    form > input{
+    form > div > input{
         /* width: 100%; */
         height: 40px;
+        width: 98%;
         border: 1px solid transparent;
     }
     form > textarea{

@@ -46,9 +46,9 @@ export default {
             abled: false,
             cards: [
                 {
-                    header1: 'creative digital',
-                    header2: 'agency',
-                    paragraph: "Welcome to our private quarters on the web",
+                    header1: 'Full Stack Developer',
+                    header2: 'Appreciation',
+                    paragraph: "Thanks for your Time, I know how precious it is. Feel free to reach out and send reviews/comments.",
                     id:1,
                     styleObject: {
                     color: "black",
@@ -60,9 +60,9 @@ export default {
             //         
                 },
                 {
-                    header1: 'creative digital',
-                    header2: 'agency',
-                    paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+                    header1: 'Full Stack Developer',
+                    header2: 'Welcome',
+                    paragraph: " Hello! Welcome to my Portfolio website, It's nice to have you here.\n Please take your time and go through my portfolio.",
                     id:2,
                     styleObject: {
                     color: "black",
@@ -72,9 +72,9 @@ export default {
                     
                 },
                 {
-                    header1: 'creative digital',
-                    header2: 'agency',
-                    paragraph: "Welcome to our private quarters on the web",
+                    header1: 'Full Stack Developer',
+                    header2: 'About me',
+                    paragraph: "I was an undergraduate student in computer science, I dropped out because of the educational challenges In my country nigeria. I've been a front end developer for 2+ years and a full stack developer for 1 year.",
                     id:3,
                     styleObject: {
                     color: "black",
@@ -85,9 +85,9 @@ export default {
             //         
                 },
                 {
-                    header1: 'creative digital',
-                    header2: 'agency',
-                    paragraph: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.",
+                    header1: 'Full Stack Developer',
+                    header2: 'Motivation',
+                    paragraph: "After withdrawing from the University, I decided to do self learning and develop myself. I later enrolled for front end web development in diploma to get certified. I started back end developing so I could develop the server side for my private projects.",
                     id:4,
                     styleObject: {
                     color: "black",

@@ -2,7 +2,7 @@
     <div id="team" class="team">
         <div class="topic">
             <h1 id="teamHeader" >{{header}}</h1>
-            <p id="teamParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p id="teamParagraph">My name is <span style="color: #058bce;">Akinsanmi Timothy</span> and I'm a full stack developer. </p>
         </div>
         <carousel-team/>
     </div>

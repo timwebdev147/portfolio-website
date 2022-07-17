@@ -2,7 +2,7 @@
     <div id="portfolio" class="portfolio">
         <div class="topic">
             <h1 id="portfolioHeader">{{header}}</h1>
-            <p id="portfolioParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+            <p id="portfolioParagraph">Few Projects I've done in different categories.</p>
         </div>
         <div class="buttons">
             <a href="">all</a>
@@ -325,7 +325,7 @@ export default {
     }
     .portfolio > .topic > p{
         color: black;
-        font-size: 15px;
+        font-size: 17px;
         padding-left: 25px;
         padding-right: 25px;
         /* line-height: 1.5; */

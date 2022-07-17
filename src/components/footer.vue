@@ -23,7 +23,18 @@ export default {
 <style>
     .fa-twitter, .fa-linkedin, .fa-hackerrank, .fa-github{
         color: #058bce;
+        font-size: 30px;
     }
+</style>
+<style>
+@media (min-width: 350px) and (max-width:750px) {
+    .fa-twitter, .fa-linkedin, .fa-hackerrank, .fa-github{
+        color: #058bce;
+        font-size: 25px;
+        margin-right: 5px;
+    }
+
+}
 </style>
 
 <style scoped>
@@ -92,6 +103,7 @@ export default {
         font-size: 12px;
         padding: 0;
         margin: 0;
+        text-align: left;
         /* color: red; */
     }
     .footer > p:last-child {
@@ -101,5 +113,6 @@ export default {
     .footer > p:last-child > span{
         color: #058BCE;
     }
+    
 }
 </style>

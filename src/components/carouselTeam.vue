@@ -446,7 +446,7 @@ export default {
         /* border: 2px solid black; */
         object-fit: contain;
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: 140% 90%;
         /* height: 100%; */
     }
     .card > .team-about{

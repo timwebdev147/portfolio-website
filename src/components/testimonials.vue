@@ -2,7 +2,7 @@
     <div id="testimonials" class="testimonials">
         <div class="topic">
             <h1 id="testimonialsHeader">{{header}}</h1>
-            <p id="testimonialsParagraph">Lorem ipsum dolor sit amet consectetur.</p>
+            <p id="testimonialsParagraph">Honest reviews from clients.</p>
         </div>
         <testimonial-slider/>
     </div>
@@ -132,7 +132,7 @@ export default {
     }
     .testimonials > .topic > p{
         color: white;
-        font-size: 15px;
+        font-size: 17px;
         padding-left: 25px;
         padding-right: 25px;
         /* line-height: 1.5; */
