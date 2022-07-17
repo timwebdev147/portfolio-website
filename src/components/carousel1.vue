@@ -11,7 +11,7 @@
                 <h1 :class="{'slide-left': disabled, 'header1': abled, 'header1-1': active}" >{{card.header1}}</h1>
                 <h2 :class="{'slide-right': disabled, 'header2': abled, 'header1-1': active}">{{card.header2}}</h2>
                 <p :class="{'slide-right': disabled, 'cardPara': abled, 'header1-1': active, 'header1-1Mobile': activeMoblie}">{{card.paragraph}}</p>
-                <a :class="{'slide-bottom': disabled, 'cardButton': abled, 'header1-1': active}" href=""><b>SERVICES</b></a>
+                <a :class="{'slide-bottom': disabled, 'cardButton': abled, 'header1-1': active}" href="#services"><b>SERVICES</b></a>
                 </div>
             </div>
         </transition-group>
@@ -659,7 +659,7 @@ export default {
         text-decoration: none;
         /* margin-bottom: 50px; */
         position: absolute;
-        bottom: 25%;
+        bottom: 18%;
         /* left: 100px; */
         color: white;
         /* background-color: rgb(184, 184, 236); */
