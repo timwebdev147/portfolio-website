@@ -56,7 +56,7 @@ export default {
                     backgroundPosition: 'top',
                     },
                     transit: null,
-                    class: 'card1',
+                    class: 'card3',
             //         
                 },
                 {
@@ -74,7 +74,7 @@ export default {
                 {
                     header1: 'Full Stack Developer',
                     header2: 'About me',
-                    paragraph: "I was an undergraduate student in computer science, I dropped out because of the educational challenges In my country nigeria. I've been a front end developer for 2+ years and a full stack developer for 1 year.",
+                    paragraph: "I'm a certified web developer, I've been a front end developer for 2+ years and a full stack developer for 1 year, I started back end developing so I could develop the server side for my private projects.",
                     id:3,
                     styleObject: {
                     color: "black",
@@ -84,18 +84,18 @@ export default {
                     class: 'card1',
             //         
                 },
-                {
-                    header1: 'Full Stack Developer',
-                    header2: 'Motivation',
-                    paragraph: "After withdrawing from the University, I decided to do self learning and develop myself. I later enrolled for front end web development in diploma to get certified. I started back end developing so I could develop the server side for my private projects.",
-                    id:4,
-                    styleObject: {
-                    color: "black",
-                    backgroundSize: 'cover'
-                    },
-                    class: 'card2',
+                // {
+                //     header1: 'Full Stack Developer',
+                //     header2: 'Motivation',
+                //     paragraph: "After withdrawing from the University, I decided to do self learning and develop myself. I later enrolled for front end web development in diploma to get certified. ",
+                //     id:4,
+                //     styleObject: {
+                //     color: "black",
+                //     backgroundSize: 'cover'
+                //     },
+                //     class: 'card2',
                     
-                },
+                // },
                 // {
                 //     tittle: 'i am Slide D',
                 //     id:4,
@@ -117,6 +117,10 @@ export default {
                 {
                     classInidicator: '',
                     id: 2
+                },
+                {
+                    classInidicator: '',
+                    id: 3
                 }
             ]
         }
@@ -153,7 +157,7 @@ export default {
             const last = this.indicators.pop()
             this.indicators = [last].concat(this.indicators);
             setTimeout(() => this.abled = false, 1000)
-            setTimeout(() => this.active = true, 100)
+            setTimeout(() => this.active = true, 50)
             setTimeout(() => this.activeMoblie = true, 190)
             setTimeout(() => this.disabled = true, 1000)
             setTimeout(() => this.disabled = false, 2000)
@@ -334,7 +338,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-left: 99vw;
+        /* padding-left: 99vw; */
         overflow: hidden;
         width: 100vw;
         
@@ -354,6 +358,9 @@ export default {
         float: left;
         white-space: nowrap;
     } */
+    div.card.card3{
+        background-image: url('/src/assets/tech-sis.jpg');
+    }
     div.card.card2{
         background-image: url('/src/assets/img/backgrounds/header-bg.jpg');
     }
@@ -393,7 +400,7 @@ export default {
         animation-name: fade;
         animation-duration: 0.9s;
     }
-    .transit2:nth-child(4){
+    .transit2:nth-child(3){
         opacity: 1;
         animation-name: fade2;
         animation-duration: 0.9s;
