@@ -68,7 +68,7 @@ export default {
                     color: "black",
                     backgroundSize: 'cover'
                     },
-                    class: 'card2',
+                    class: 'card1',
                     
                 },
                 {
@@ -81,7 +81,7 @@ export default {
                     backgroundSize: 'cover'
                     },
                     transit: null,
-                    class: 'card1',
+                    class: 'card2',
             //         
                 },
                 // {
@@ -197,7 +197,7 @@ export default {
             const first = this.indicators.shift()    
             this.indicators = this.indicators.concat(first);
             setTimeout(() => this.abled = false, 1000)
-            setTimeout(() => this.active = true, 300)
+            setTimeout(() => this.active = true, 50)
             setTimeout(() => this.activeMoblie = true, 190)
             setTimeout(() => this.disabled = true, 1000)
             setTimeout(() => this.disabled = false, 2000)
@@ -358,13 +358,13 @@ export default {
         float: left;
         white-space: nowrap;
     } */
-    div.card.card3{
-        background-image: url('/src/assets/tech-sis.jpg');
+    div.card.card1{
+        background-image: url('/src/assets/background-4.jpg');
     }
     div.card.card2{
-        background-image: url('/src/assets/img/backgrounds/header-bg.jpg');
+        background-image: url('/src/assets/background-5.jpg');
     }
-    div.card.card1{
+    div.card.card3{
         background-image: url('/src/assets/img/backgrounds/header-bg-two.jpg');
     }
     /* div.card.card3{
