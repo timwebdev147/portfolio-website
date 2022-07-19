@@ -52,7 +52,7 @@ export default {
                     id:1,
                     styleObject: {
                     color: "black",
-                    backgroundSize: 'cover',
+                    // backgroundSize: 'cover',
                     backgroundPosition: 'top',
                     },
                     transit: null,
@@ -66,7 +66,7 @@ export default {
                     id:2,
                     styleObject: {
                     color: "black",
-                    backgroundSize: 'cover'
+                    // backgroundSize: 'cover'
                     },
                     class: 'card1',
                     
@@ -78,7 +78,7 @@ export default {
                     id:3,
                     styleObject: {
                     color: "black",
-                    backgroundSize: 'cover'
+                    // backgroundSize: 'cover'
                     },
                     transit: null,
                     class: 'card2',
@@ -360,12 +360,17 @@ export default {
     } */
     div.card.card1{
         background-image: url('/src/assets/background-4.jpg');
+        background-size: cover;
     }
     div.card.card2{
         background-image: url('/src/assets/background-5.jpg');
+        background-size: cover;
+
     }
     div.card.card3{
-        background-image: url('/src/assets/img/backgrounds/header-bg-two.jpg');
+        background-image: url('/src/assets/background-6.jpg');
+        background-size: cover;
+
     }
     /* div.card.card3{
         background-image: url('/src/assets/background-3.jpg');
@@ -792,6 +797,7 @@ export default {
     }
     .card > div > h1{
         color: white;
+        
         /* text-shadow: 2px 2px 4px grey; */
         font-size: 75%;
         /* margin-right: 100%; */
@@ -805,6 +811,9 @@ export default {
         /* transform: rotate(270deg); */
         top: 17%;
         /* left: -200px; */
+    }
+    div.card.card1, div.card.card2, div.card.card3{
+        /* background-size: 100% 100%; */
     }
     
     .header1{
