@@ -168,7 +168,7 @@ export default {
         /* border: 1px solid black; */
         justify-content: space-between;
         width: 80%;
-        height: 85vh;
+        min-height: 85vh;
         margin-top: 20px;
     }
     .services > .grid > div{
@@ -180,7 +180,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
     }
     .grid > .column > div{
         border-radius: 400px;
