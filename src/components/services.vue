@@ -2,57 +2,34 @@
     <div id="services" class="services">
         <div class="topic">
             <h1 id="serviceHeader" >{{header}}</h1>
-            <p id="serviceParagraph" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p id="serviceParagraph">I offer Full stack development services<br/> Client side development, Server side development and Database integration. </p>
         </div>
         <div class="grid">
+            
             <div class="column">
-                <div><i class="fa fa-desktop"></i></div>
-                <h1>Web and Graphic Design</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore 
-                    harum ex magni, dicta impedit.
-                </p>
-            </div>
-            <div class="column">
-                <div><i class="fa fa-desktop"></i></div>
-                <h1>Branding</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore 
-                    harum ex magni, dicta impedit.
-                </p>
-            </div><div class="column">
                 <div><i class="fa fa-desktop"></i></div>
                 <h1>Front End Development</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore 
-                    harum ex magni, dicta impedit.
+                    I work with modern javascript frameworks such as Vue and React<br/>
+                    
+                    Convert UI/UX designs into efficient and reusable codes<br/>
+                    
+                    consume REST Api's , develop a responsive and interactive User Interface.
                 </p>
             </div><div class="column">
                 <div><i class="fa fa-desktop"></i></div>
                 <h1>Back End Development</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore 
-                    harum ex magni, dicta impedit.
+                    I currently use a PHP framework called Laravel and several data storage applications<br/>
+
+                    develop/create Api's that allow cross platform sharing.<br/>
+                    I build, maintain, secure and debug serve-side applications and tools.
                 </p>
             </div><div class="column">
                 <div><i class="fa fa-desktop"></i></div>
-                <h1>Responsive Design</h1>
+                <h1>Database</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore 
-                    harum ex magni, dicta impedit.
-                </p>
-            </div><div class="column">
-                <div><i class="fa fa-desktop"></i></div>
-                <h1>Consulting</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing 
-                    elit. Minima maxime quam architecto quo inventore 
-                    harum ex magni, dicta impedit.
+                    I create databases to store your various informations and data inputs from the client side
                 </p>
             </div>
         </div>
@@ -143,7 +120,7 @@ export default {
 <style scoped>
     .services{
         width: 100%;
-        height: 140vh;
+        max-height: 140vh;
         /* border: 1px solid black; */
         background-image: url('/src/assets/img/backgrounds/services-bg.jpg');
         background-size: cover;
@@ -279,13 +256,13 @@ export default {
         display: flex;
         flex-wrap: wrap;
         /* border: 1px solid black; */
-        justify-content: space-between;
+        justify-content: space-evenly;
         width: 90%;
         height: 806px;
         margin-top: 20px;
     }
     .services > .grid > .column{
-        width: calc(50% - 10px);
+        width: calc(90% - 10px);
         height: 34%;
         /* border: 1px solid black; */
         /* margin-bottom: 20px; */

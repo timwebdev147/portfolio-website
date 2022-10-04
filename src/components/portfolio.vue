@@ -7,18 +7,32 @@
         <div class="buttons">
             <a href="">all</a>
             <a href="">wordpress</a>
-            <a href="">web design</a>
-            <a href="">graphic design</a>
-            <a href="">php</a>
-            <a href="">bootstrap</a>
+            <a href="">Vue</a>
+            <a href="">react</a>
+            <a href="">laravel</a>
         </div>
         <div class="portfolioGrid" >
             <div :style="portfolio.style" class="portfolioProject" :class="portfolio.class" v-for="portfolio in portfolios" :key="portfolio.id">
-                <div @mouseleave="mouseLeave()" @mouseenter="mouseEnter()" :class="{portfolioProjectHover: active}">
+                <div @mouseleave="mouseLeave()" @mouseenter="mouseEnter()" @click="mouseEnter()" :class="{portfolioProjectHover: active}">
                     <h1 :class="{projectHoverHeader: active}">{{portfolio.skill}}</h1>
                     <p>{{portfolio.category}}</p>
-                    <i :class="{projectIcon: active}" class="fa fa-plus"></i>
+                    <button @click="imgClick(portfolio)">
+                    
+                        <i :class="{projectIcon: active}" class="fa fa-arrow-up-right-from-square"></i>
+                    </button>
                 </div>
+                <div  v-if="portfolio.show" class="modal">
+            <button @click="closeModal(portfolio)">
+                <i class="fa fa-times"></i>
+            </button>
+
+            <iframe :src="portfolio.webLink" frameborder="0"></iframe>
+        </div>
+
+                <!-- <div class="webmodal">
+
+                </div> -->
+                <a class="weblink" target="_blank" :href="portfolio.webLink">{{portfolio.skill}}</a>
             </div>
         </div>
     </div>
@@ -36,68 +50,23 @@ export default {
             portfolios: [
                 {
                     style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/card.jpg')})`,  
+                     backgroundImage: `url(${require('@/assets/bankress3.jpg')})`,  
                     },
                     id: 1,
-                    skill: 'wine label',
-                    category: 'branding'
+                    skill: 'Bankress party world',
+                    category: 'vue',
+                    webLink: 'https://bankress-party-world.vercel.app/'
                 },
                 {
                     style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/2.jpg')})`,  
+                     backgroundImage: `url(${require('@/assets/kitchenmanager1.jpg')})`,  
                     },
                     id: 2,
-                    skill: 'business card',
-                    category: 'stationary'
+                    skill: 'Kitchen Manager web app',
+                    category: 'react and laravel',
+                    webLink: 'https://kitchen-manager.vercel.app/'
                 },
-                {
-                    style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/3.jpg')})`,  
-                    },
-                    id: 3,
-                    skill: 'logo design',
-                    category: 'branding'
-                },
-                {
-                    style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/4.jpg')})`,  
-                    },
-                    id: 4,
-                    skill: 'logo design',
-                    category: 'branding'
-                },
-                {
-                    style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/5.jpg')})`,  
-                    },
-                    id: 5,
-                    skill: 'web design',
-                    category: 'web design'
-                },
-                {
-                    style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/6.jpg')})`,  
-                    },
-                    id: 6,
-                    skill: 'packaging and label designing',
-                    category: 'branding'
-                },
-                {
-                    style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/1.jpg')})`,  
-                    },
-                    id: 7,
-                    skill: 'logo design',
-                    category: 'branding'
-                },
-                {
-                    style:{
-                     backgroundImage: `url(${require('@/assets/img/portfolio/book.jpg')})`,  
-                    },
-                    id: 8,
-                    skill: 'book cover',
-                    category: 'branding'
-                },
+                
 
             ]
         }
@@ -123,6 +92,13 @@ export default {
         mouseLeave() {
             this.active = false;
             this.notActive = true;
+        },
+        imgClick(portfolio) {
+            portfolio.show = true;
+            console.log('show');
+        },
+        closeModal(portfolio){
+            portfolio.show = false
         }
     },
     mounted() {
@@ -206,13 +182,15 @@ export default {
         height: 80vh;
         width: 100%;
         display: flex;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
     .portfolioProject{
-        width: 25%;
+        width: 45%;
         height: 50%;
         background-size: 100% 100%;
         display: flex;
+        position: relative;
         /* background-color: blue; */
         /* border: 1px solid black; */
     }
@@ -223,14 +201,14 @@ export default {
 
     }
     /* .portfolioProject: */
-    .portfolioProject > div{
+    .portfolioProject > div:first-child{
         height: 100%;
         width: 100%;
         /* visibility: hidden; */
         display: none;
         flex-direction: column;
         justify-content: center;
-        background-image: linear-gradient(to right, rgb(112, 35, 112), #c31a20);
+        background-image: linear-gradient(to right, #00000049, #058bce);
     }
     .portfolioProjectHover{
         animation-name: projectEnter;
@@ -273,9 +251,15 @@ export default {
             top: 0;
         }
     }
-    .portfolioProject > div > .fa-plus{
+    .portfolioProject > div > button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .portfolioProject > div > button > .fa-arrow-up-right-from-square{
         font-weight: 900;
         position: relative;
+        color: white;
         margin-top: 20px;
     }
     .projectIcon{
@@ -290,12 +274,57 @@ export default {
             bottom: 0;
         }
     }
+    .modal{
+background-color: rgba(0, 0, 0, 0.8);
+position: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+z-index: 3000;
+height: 100vh;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+/* .modal > img{
+max-width: 70%;
+max-height: 80%;
+} */
+.modal > button{
+position: absolute;
+cursor: pointer;
+right: 0px;
+top: 0px;
+background-color: rgba(0, 0, 0, 0.8);
+padding: 19px 30px;
+box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.8) ;
+/* border-radius: 100px; */
+color: grey;
+border: none;
+font-size: 15px;
+}
+    .modal > iframe{
+        width: 100%;
+        height: 80%;
+        background-color: white;
+    }
+    .portfolioProject:hover.portfolioProject > .modal{
+        display: flex;
+    }
+    .weblink{
+        position: absolute;
+        bottom: -30px;
+        color: #058bce;
+        margin: auto;
+    }
 </style>
 
 <style scoped>
-@media (min-width: 350px) and (max-width:750px) {
+@media (max-width: 600px) {
     .portfolio {
-        height:  896px ;
+        min-height:  896px ;
         background-color: #ececec;
         width: 100%;
         display: flex;
@@ -354,21 +383,28 @@ export default {
         text-transform: uppercase;
     }
     .portfolioGrid{
-        height: 537px;
+        min-height: 537px;
         /* border: 1px solid black; */
         width: 100%;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
     }
     .portfolioProject{
-        width: calc(50% - 5px);
-        height: 25%;
+        width: calc(90% - 5px);
+        height: 50%;
         margin-right: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 50px;
         background-size: 100% 100%;
         display: flex;
         /* background-color: blue; */
         /* border: 1px solid black; */
+    }
+    .portfolioProject:active.portfolioProject > div{
+        /* visibility: initial; */
+        display: inherit;
+        /* transition-duration: 0.5s; */
+
     }
     .portfolioProject:hover.portfolioProject > div{
         /* visibility: initial; */
@@ -384,7 +420,7 @@ export default {
         display: none;
         flex-direction: column;
         justify-content: center;
-        background-image: linear-gradient(to right, rgb(112, 35, 112), #c31a20);
+        /* background-image: linear-gradient(to right, rgb(112, 35, 112), #c31a20); */
     }
     .portfolioProjectHover{
         animation-name: projectEnter;
@@ -444,5 +480,20 @@ export default {
             bottom: 0;
         }
     }
+    .portfolioProject >.modal{
+background-color: rgba(0, 0, 0, 0.8);
+position: fixed;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+width: 100%;
+z-index: 3000;
+height: 100vh;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
 }
 </style>

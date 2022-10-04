@@ -401,7 +401,7 @@ export default {
 <style scoped>
 @media (min-width: 350px) and (max-width:750px) {
     .carousel-view{
-        height: 50vh;
+        min-height: 50vh;
         margin-top: 0px;
         width: calc(80%);
         /* padding: 0 10px; */
@@ -442,7 +442,7 @@ export default {
         transition: transform 0.8s ease-in-out;
     }
     .card > .team-image{
-        width: 60%;
+        width: 70%;
         /* border: 2px solid black; */
         object-fit: contain;
         background-repeat: no-repeat;

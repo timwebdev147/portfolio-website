@@ -74,7 +74,7 @@ export default {
                 {
                     header1: 'Full Stack Developer',
                     header2: 'About me',
-                    paragraph: "I'm a certified web developer, I've been a front end developer for 2+ years and a full stack developer for 1 year, I started back end developing so I could develop the server side for my private projects.",
+                    paragraph: "I'm a certified web developer, I've been a front end developer for 2+ years and a full stack developer for 1 year, I started writing back end codes so I could develop the server side for my private projects.",
                     id:3,
                     styleObject: {
                     color: "black",
@@ -695,7 +695,7 @@ export default {
     }
 </style>
 <style scoped>
-@media (min-width: 350px) and (max-width:750px) {
+@media (max-width:600px) {
     .carousel-view{
         height: 80vh;
         width: 100%;
