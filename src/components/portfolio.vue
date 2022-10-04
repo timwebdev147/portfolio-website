@@ -279,7 +279,7 @@ background-color: rgba(0, 0, 0, 0.8);
 position: fixed;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: flex-end;
 width: 100%;
 z-index: 3000;
 height: 100vh;
@@ -307,7 +307,7 @@ font-size: 15px;
 }
     .modal > iframe{
         width: 100%;
-        height: 80%;
+        height: 90%;
         background-color: white;
     }
     .portfolioProject:hover.portfolioProject > .modal{
@@ -495,5 +495,10 @@ bottom: 0;
 left: 0;
 right: 0;
 }
+.modal > iframe{
+        width: 100%;
+        height: 80%;
+        background-color: white;
+    }
 }
 </style>
