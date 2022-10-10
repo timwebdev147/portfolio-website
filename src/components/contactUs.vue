@@ -6,7 +6,7 @@
                 <h1 id="contactHeader">{{header}}</h1>
                 <p id="contactParagraph">If you need my skills, Kindly fill in your details correctly and reach out to me Thanks.</p>
             </div>
-            <form action="https://webberman-contact-form.herokuapp.com/" class="sample_form" method="POST">
+            <form action="https://webberman-mailer.vercel.app/" class="sample_form" method="POST">
                 <span v-if="fullname == '' || email == '' || !email == '' || number == '' || isNaN(number)"  >{{genErr}}</span>
                 <div>
                 <input class="form_name" type="text" name="fullname" placeholder="Your Name *" v-model="fullname">
